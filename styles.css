@@ -23,11 +23,11 @@ select {
 }
 
 :root {
-  --clr-dark-grey: hsl();
-  --clr-light-grey: hsl();
-  --clr-dark-green: hsl();
-  --clr-light-green: hsl();
-  --clr-error: hsl();
+  --clr-dark-grey: hsl(187deg, 24%, 22%);
+  --clr-light-grey: hsl(186deg, 15%, 59%);
+  --clr-dark-green: hsl(169deg, 82%, 27%);
+  --clr-light-green: hsl(148deg, 38%, 91%);
+  --clr-error: hsl(0deg, 66%, 54%);
 
   --spacing-50: 0.5rem;
   --spacing-75: 0.75rem;
@@ -39,3 +39,29 @@ select {
 
   --lh-bigger: 150%;
 }
+
+/* CSS Styling*/
+body {
+  background-color: var(--clr-light-green);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  background-color: white;
+  display: grid;
+  grid-template:
+    "h1"
+    "first" "last"
+    "email"
+    "query"
+    "message"
+    "consent"
+    "submit";
+}
+/* 
+form {
+  display: grid;
+} */
