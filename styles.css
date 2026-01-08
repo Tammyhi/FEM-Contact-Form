@@ -1,0 +1,41 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* CSS Design System */
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --clr-dark-grey: hsl();
+  --clr-light-grey: hsl();
+  --clr-dark-green: hsl();
+  --clr-light-green: hsl();
+  --clr-error: hsl();
+
+  --spacing-50: 0.5rem;
+  --spacing-75: 0.75rem;
+  --spacing-100: 1rem;
+  --spacing-150: 1.5rem;
+  --spacing-200: 2rem;
+  --spacing-250: 2.5rem;
+  --spacing-800: 8rem;
+
+  --lh-bigger: 150%;
+}
