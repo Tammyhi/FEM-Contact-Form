@@ -47,11 +47,15 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  font-family: "Karla", sans-serif;
+  line-height: var(--lh-bigger);
+  color: var(--clr-dark-grey);
 }
 
 main {
   background-color: white;
   padding: var(--spacing-250);
+  border-radius: var(--spacing-100);
 }
 
 form {
@@ -64,8 +68,35 @@ input:not([type="radio"], [type="checkbox"]) {
   width: 100%;
 }
 
+textarea,
+input:is([type="text"], [type="email"]),
+fieldset div {
+  border-radius: var(--spacing-50);
+  border: 1px solid var(--clr-light-grey);
+}
+
+button {
+  border-radius: var(--spacing-50);
+  border: 0px;
+  background-color: var(--clr-dark-green);
+  color: white;
+}
+
 h1 {
   padding-bottom: var(--spacing-200);
+  font-weight: bold;
+  font-size: var(--spacing-200);
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+
+span {
+  color: var(--clr-dark-green);
+}
+
+div.flex label,
+button {
+  font-size: var(--spacing-100) + 2px;
 }
 
 .form-group {
@@ -74,10 +105,6 @@ h1 {
 
 fieldset.form-group {
   grid-template-columns: 1fr 1fr;
-}
-
-fieldset div {
-  border: 1px solid black;
 }
 
 .one-col {
