@@ -21,36 +21,50 @@
     <main>
       <h1>Contact Us</h1>
       <form>
-        <div>
+        <div class="form-group">
           <label for="first-name">First Name <span>*</span></label>
-          <input id="first-name" name="first-name" type="text" />
+          <input id="first-name" name="first-name" type="text" required />
         </div>
-        <div>
+        <div class="form-group">
           <label for="last-name">Last Name <span>*</span></label>
-          <input id="last-name" name="last-name" type="text" />
+          <input id="last-name" name="last-name" type="text" required />
         </div>
-        <div>
+        <div class="form-group one-col">
           <label for="email">Email Address <span>*</span></label>
-          <input id="email" name="email" type="email" />
+          <input id="email" name="email" type="email" required />
         </div>
-        <fieldset>
+        <fieldset class="form-group one-col">
           <legend>Query Type <span>*</span></legend>
-          <input id="general inquiry" name="query type" type="radio" />
-          <label for="general inquiry">General Inquiry</label>
-          <input id="support request" name="query type" type="radio" />
-          <label for="support request">Support Request</label>
+          <div class="form-group flex">
+            <input
+              id="general inquiry"
+              name="query type"
+              type="radio"
+              required
+            />
+            <label for="general inquiry">General Inquiry</label>
+          </div>
+          <div class="form-group flex">
+            <input
+              id="support request"
+              name="query type"
+              type="radio"
+              required
+            />
+            <label for="support request">Support Request</label>
+          </div>
         </fieldset>
-        <div>
+        <div class="form-group one-col">
           <label for="message">Message <span>*</span></label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" required></textarea>
         </div>
-        <div>
-          <input id="consent" name="consent" type="checkbox" />
-          <label for="consent"
-            >I consent to being contacted by the team <span>*</span></label
-          >
+        <div class="form-group one-col flex">
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent">
+            I consent to being contacted by the team <span>*</span>
+          </label>
         </div>
-        <button type="submit">Submit</button>
+        <button class="one-col" type="submit">Submit</button>
       </form>
     </main>
   </body>

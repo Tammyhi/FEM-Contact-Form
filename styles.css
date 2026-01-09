@@ -51,17 +51,40 @@ body {
 
 main {
   background-color: white;
-  display: grid;
-  grid-template:
-    "h1"
-    "first" "last"
-    "email"
-    "query"
-    "message"
-    "consent"
-    "submit";
+  padding: var(--spacing-250);
 }
-/* 
+
 form {
   display: grid;
-} */
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-150);
+}
+
+input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+h1 {
+  padding-bottom: var(--spacing-200);
+}
+
+.form-group {
+  display: grid;
+}
+
+fieldset.form-group {
+  grid-template-columns: 1fr 1fr;
+}
+
+fieldset div {
+  border: 1px solid black;
+}
+
+.one-col {
+  grid-column: 1 / -1;
+}
+
+.flex {
+  display: flex;
+  gap: 1ch;
+}
